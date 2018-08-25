@@ -113,6 +113,11 @@ In order to create a signup form, you need to:
 
 
 == Changelog ==
+= 2.9.3 =
+* Fix the issue that request ajax call on every page
+* Fix sms field issue
+* add required field alert message
+
 = 2.9.2 =
 * Add compliance note block to forms
 * Add multi list subscription option
