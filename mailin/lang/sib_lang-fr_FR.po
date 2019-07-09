@@ -507,10 +507,12 @@ msgid "Curl error."
 msgstr "Erreur Curl."
 
 #: ../page/page-home.php:140
+Once you have created a SendinBlue account, activate this plugin to send
+all of your transactional emails via SendinBlue SMTP. SendinBlue optimizes email delivery to ensure emails reach the inbox.
 msgid ""
-"Once your have created your SendinBlue account, activate this plugin to send "
-"all your transactional emails by using SendinBlue SMTP to make sure all of "
-"your emails get to your contacts inbox."
+"Once you have created a SendinBlue account, activate this plugin to send"
+"all of your transactional emails via SendinBlue SMTP."
+"SendinBlue optimizes email delivery to ensure emails reach the inbox."
 msgstr ""
 "Une fois votre compte SendinBlue créé, activez ce plugin pour envoyer tous "
 "vos emails transactionnels avec SendinBlue SMTP. Vous vous assurerez que vos "
