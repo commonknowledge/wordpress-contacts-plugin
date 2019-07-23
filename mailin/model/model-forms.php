@@ -52,7 +52,7 @@ if ( ! class_exists( 'SIB_Forms' ) ) {
                 PRIMARY KEY (`id`)
                 );';
 			require_once( ABSPATH . 'wp-admin/includes/upgrade.php' );
-			dbDelta( $creation_query );
+			$wpdb->query($creation_query);
 			// create default form.
             $rows = $wpdb->get_results('SELECT * FROM '. $wpdb->prefix . self::TABLE_NAME );
             if (count( $rows ) == 0 )

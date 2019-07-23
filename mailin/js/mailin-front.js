@@ -158,9 +158,7 @@ jQuery(document).ready(function(){
                     {
                         jQuery('.sib-multi-lists').removeClass('sib_error');
                     }
-                    if (data.redirect) {
-                        window.location.href = data.redirect;
-                    } else if (data.status === 'success' || data.status === 'update') {
+                    if (data.status === 'success' || data.status === 'update') {
                         var cdata = '<p class="sib-alert-message sib-alert-message-success ">' + data.msg.successMsg + '</p>';
                         form.find('.sib_msg_disp').html(cdata).show();
                     } else if (data.status === 'failure') {

@@ -41,7 +41,7 @@ class SIB_Model_Users {
 			PRIMARY KEY (`id`)
 			);';
 		require_once( ABSPATH . 'wp-admin/includes/upgrade.php' );
-		dbDelta( $creation_query );
+		$wpdb->query($creation_query);
 	}
 
 	/**
