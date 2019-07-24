@@ -113,6 +113,11 @@ In order to create a signup form, you need to:
 
 
 == Changelog ==
+= 2.9.6 =
+* Fr translations fixes
+* Small improvements
+
+
 = 2.9.5 =
 * Fix fr translation issue. 
 
