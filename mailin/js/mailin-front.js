@@ -178,7 +178,7 @@ jQuery(document).ready(function(){
                         form.find('.sib_msg_disp').html(cdata).show();
                     }
                     form[0].reset();
-                    if (data.status === 'success' && data.status === 'update' && data.redirect) {
+                    if (data.redirect && (data.status === 'success' || data.status === 'update')) {                        
                         window.location.href = data.redirect;
                     }
                     var previous_code = form.find('.sib-cflags').data('dial-code');

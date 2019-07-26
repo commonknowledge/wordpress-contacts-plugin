@@ -146,6 +146,7 @@ if ( ! class_exists( 'SIB_Forms' ) ) {
 					'errorMsg' => $formData['errorMsg'],
 					'existMsg' => $formData['existMsg'],
 					'invalidMsg' => $formData['invalidMsg'],
+					'requiredMsg' => $formData['requiredMsg'],
 					'attributes' => 'email,NAME',
 				);
 			} else {
@@ -178,6 +179,7 @@ if ( ! class_exists( 'SIB_Forms' ) ) {
 						continue;
 					}
 					$listIDs = maybe_unserialize( $form['listID'] );
+					$lisIDs = !empty($listIDs) ? $listIDs : [];
 					// get names form id array.
 					$lists = SIB_API_Manager::get_lists(); // pair of id and name.
 
@@ -275,8 +277,9 @@ if ( ! class_exists( 'SIB_Forms' ) ) {
 			$attributes = 'email,NAME';
 			global $wpdb;
 			$query = 'INSERT INTO ' . $wpdb->prefix . self::TABLE_NAME . ' ';
+			$deafult_form_name  = esc_attr( __( 'Default Form', 'sib_lang' ) );
 			$query .= '(title,html,css,listID,dependTheme,successMsg,errorMsg,existMsg,invalidMsg,requiredMsg,attributes,date,isDefault) ';
-			$query .= "VALUES ('Default Form','{$html}','{$css}','{$list}','1','{$formData['successMsg']}','{$formData['errorMsg']}','{$formData['existMsg']}','{$formData['invalidMsg']}','{$formData['requiredMsg']}','{$attributes}','{$current_date}','1')";
+			$query .= "VALUES ('{$deafult_form_name}','{$html}','{$css}','{$list}','1','{$formData['successMsg']}','{$formData['errorMsg']}','{$formData['existMsg']}','{$formData['invalidMsg']}','{$formData['requiredMsg']}','{$attributes}','{$current_date}','1')";
 			$wpdb->query( $query ); // db call ok; no-cache ok.
 		}
 

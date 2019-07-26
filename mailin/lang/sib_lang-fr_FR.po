@@ -1229,7 +1229,7 @@ msgstr "Rôles à synchroniser"
 msgid "Administrator"
 msgstr "Administrateur"
 
-msgid "Auther"
+msgid "Author"
 msgstr "Auteur"
 
 msgid "Subscriber"
@@ -1264,3 +1264,18 @@ msgstr "Attributs de contact SendinBlue"
 
 msgid "You have %s existing users. Do you want to add them to SendinBlue?"
 msgstr "Vous avez %s utilisateurs existants. Souhaitez-vous les ajouter à SendinBlue ?"
+
+msgid "Set up the message that will appear when the required field is empty"
+msgstr "Configurez le message qui apparaîtra lorsque le champ requis est vide"
+
+msgid "Apply"
+msgstr "Appliquer"
+
+msgid "Required Field"
+msgstr "Champ obligatoire"
+
+msgid "Please fill out this field"
+msgstr "Remplissez ce champ s’il vous plaît"
+
+msgid "Default Form"
+msgstr "Formulaire par défaut"

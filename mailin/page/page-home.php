@@ -651,7 +651,7 @@ if ( ! class_exists( 'SIB_Page_Home' ) ) {
 								<b><p><?php esc_attr_e( 'Roles to sync', 'sib_lang' ); ?></p></b>
 								<?php foreach ( wp_roles()->roles as $role_name => $role_info ) : ?>
 								<div class="col-md-6">
-									<span class="" style="display: block;float:left;padding-left: 16px;"><input type="checkbox" id="<?php echo esc_attr( $role_name ); ?>" value="<?php echo esc_attr( $role_name ); ?>" name="sync_role" checked><label for="<?php echo esc_attr( $role_name ); ?>" style="margin: 4px 24px 0 7px;font-weight: normal;"><?php echo esc_attr( $role_info['name'] ); ?></label></span>
+									<span class="" style="display: block;float:left;padding-left: 16px;"><input type="checkbox" id="<?php echo esc_attr( $role_name ); ?>" value="<?php echo esc_attr( $role_name ); ?>" name="sync_role" checked><label for="<?php echo esc_attr( $role_name ); ?>" style="margin: 4px 24px 0 7px;font-weight: normal;"><?php esc_attr_e( ucfirst($role_name), 'sib_lang' ); ?></label></span>
 								</div>
 								<?php endforeach; ?>
 							</div>
