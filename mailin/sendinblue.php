@@ -3,7 +3,7 @@
  * Plugin Name: SendinBlue Subscribe Form And WP SMTP
  * Plugin URI: https://www.sendinblue.com/?r=wporg
  * Description: Easily send emails from your WordPress blog using SendinBlue SMTP and easily add a subscribe form to your site
- * Version: 2.9.5
+ * Version: 2.9.6
  * Author: SendinBlue
  * Author URI: https://www.sendinblue.com/?r=wporg
  * License: GPLv2 or later
@@ -440,9 +440,16 @@ if ( ! class_exists( 'SIB_Manager' ) ) {
 			$home_settings = get_option( SIB_Manager::HOME_OPTION_NAME, array() );
 			if ( isset( $home_settings['activate_ma'] ) && 'yes' == $home_settings['activate_ma'] ) {
 				$general_settings = get_option( SIB_Manager::MAIN_OPTION_NAME, array() );
+				$ma_email = '';
+				$current_user = wp_get_current_user();
+				if ( $current_user instanceof WP_User ) {
+					$ma_email = $current_user->user_email;
+				}
 				$ma_key = $general_settings['ma_key'];
 				$output = '<script type="text/javascript">
-            (function() {window.sib ={equeue:[],client_key:"'. $ma_key .'"};/* OPTIONAL: email for identify request*/window.sendinblue = {}; for (var j = [\'track\', \'identify\', \'trackLink\', \'page\'], i = 0; i < j.length; i++) { (function(k) { window.sendinblue[k] = function() { var arg = Array.prototype.slice.call(arguments); (window.sib[k] || function() { var t = {}; t[k] = arg; window.sib.equeue.push(t);})(arg[0], arg[1], arg[2]);};})(j[i]);}var n = document.createElement("script"),i = document.getElementsByTagName("script")[0]; n.type = "text/javascript", n.id = "sendinblue-js", n.async = !0, n.src = "https://sibautomation.com/sa.js?key=" + window.sib.client_key, i.parentNode.insertBefore(n, i), window.sendinblue.page();})();
+			(function() {window.sib ={equeue:[],client_key:"'. $ma_key .'"};/* OPTIONAL: email for identify request*/
+			window.sib.email_id = "'. $ma_email .'";
+			window.sendinblue = {}; for (var j = [\'track\', \'identify\', \'trackLink\', \'page\'], i = 0; i < j.length; i++) { (function(k) { window.sendinblue[k] = function() { var arg = Array.prototype.slice.call(arguments); (window.sib[k] || function() { var t = {}; t[k] = arg; window.sib.equeue.push(t);})(arg[0], arg[1], arg[2]);};})(j[i]);}var n = document.createElement("script"),i = document.getElementsByTagName("script")[0]; n.type = "text/javascript", n.id = "sendinblue-js", n.async = !0, n.src = "https://sibautomation.com/sa.js?key=" + window.sib.client_key, i.parentNode.insertBefore(n, i), window.sendinblue.page();})();
             </script>';
 				echo $output;
 			}
@@ -612,6 +619,9 @@ if ( ! class_exists( 'SIB_Manager' ) ) {
 			}
 
 			$listID = $formData['listID'];
+			if (empty($listID)) {
+				$listID = [];
+			}
 			$interestingLists = isset( $_POST['interestingLists']) ? $_POST['interestingLists'] : array();
 			$expectedLists = isset( $_POST['listIDs'] ) ? $_POST['listIDs'] : array();
 			if ( empty($interestingLists) )
@@ -726,7 +736,8 @@ if ( ! class_exists( 'SIB_Manager' ) ) {
 		 * @param array  $attachments - attachments.
 		 */
 		static function wp_mail_native( $to, $subject, $message, $headers = '', $attachments = array() ) {
-			require self::$plugin_dir . '/inc/function.wp_mail.php';
+			$result = require self::$plugin_dir . '/inc/function.wp_mail.php';
+			return $result;
 		}
 
 		/**

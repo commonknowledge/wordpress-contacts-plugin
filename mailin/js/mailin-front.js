@@ -158,9 +158,7 @@ jQuery(document).ready(function(){
                     {
                         jQuery('.sib-multi-lists').removeClass('sib_error');
                     }
-                    if (data.redirect) {
-                        window.location.href = data.redirect;
-                    } else if (data.status === 'success' || data.status === 'update') {
+                    if (data.status === 'success' || data.status === 'update') {
                         var cdata = '<p class="sib-alert-message sib-alert-message-success ">' + data.msg.successMsg + '</p>';
                         form.find('.sib_msg_disp').html(cdata).show();
                     } else if (data.status === 'failure') {
@@ -180,6 +178,9 @@ jQuery(document).ready(function(){
                         form.find('.sib_msg_disp').html(cdata).show();
                     }
                     form[0].reset();
+                    if (data.redirect && (data.status === 'success' || data.status === 'update')) {                        
+                        window.location.href = data.redirect;
+                    }
                     var previous_code = form.find('.sib-cflags').data('dial-code');
                     if ( previous_code )
                     {

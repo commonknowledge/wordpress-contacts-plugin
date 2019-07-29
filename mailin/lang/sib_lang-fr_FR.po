@@ -78,7 +78,7 @@ msgstr "Shortcode"
 
 #: ../inc/table-forms.php:121
 msgid "Visible attributes"
-msgstr "Attributs exposés"
+msgstr "Attributs affichés"
 
 #: ../inc/table-forms.php:122 ../page/page-form.php:338
 #: ../page/page-form.php:339
@@ -451,20 +451,16 @@ msgid "Create a SendinBlue Account"
 msgstr "Créer un compte SendinBlue"
 
 #: ../page/page-home.php:116
-msgid ""
-"By Creating a free SendinBlue account, you will have access to send a "
-"confirmation message."
-msgstr ""
-"En créant un compte gratuit SendinBlue, vous pourrez envoyer un message de "
-"confirmation après inscription."
+msgid "By creating a free SendinBlue account, you will be able to send confirmation emails and:"
+msgstr "En créant un compte gratuit Sendinblue, vous pourrez envoyer vos emails de confirmations d'inscription et :"
 
 #: ../page/page-home.php:118
 msgid "Collect your contacts and upload your lists"
-msgstr "Collectez vos contacts et importez vos listes"
+msgstr "Collecter vos contacts et importer vos listes"
 
 #: ../page/page-home.php:119
 msgid "Use SendinBlue SMTP to send your transactional emails"
-msgstr "Utilisez le SMTP SendinBlue pour vos emails transactionnels"
+msgstr "Utiliser le SMTP SendinBlue pour vos emails transactionnels"
 
 #: ../page/page-home.php:120
 msgid "Email marketing builders"
@@ -472,15 +468,15 @@ msgstr "Editeurs d'Email Marketing"
 
 #: ../page/page-home.php:121
 msgid "Create and schedule your email marketing campaigns"
-msgstr "Créer une nouvelle campagne email"
+msgstr "Créer et programmer vos campagnes d'email marketing"
 
 #: ../page/page-home.php:122
-msgid "See all of"
-msgstr "Consulter toutes les"
+msgid "Try all of"
+msgstr "Essayer toutes les"
 
 #: ../page/page-home.php:122
 msgid "SendinBlue's features"
-msgstr "Fonctionnalités de Sendinblue"
+msgstr "fonctionnalités de Sendinblue"
 
 #: ../page/page-home.php:124
 msgid "Create an account"
@@ -507,16 +503,8 @@ msgid "Curl error."
 msgstr "Erreur Curl."
 
 #: ../page/page-home.php:140
-Once you have created a SendinBlue account, activate this plugin to send
-all of your transactional emails via SendinBlue SMTP. SendinBlue optimizes email delivery to ensure emails reach the inbox.
-msgid ""
-"Once you have created a SendinBlue account, activate this plugin to send"
-"all of your transactional emails via SendinBlue SMTP."
-"SendinBlue optimizes email delivery to ensure emails reach the inbox."
-msgstr ""
-"Une fois votre compte SendinBlue créé, activez ce plugin pour envoyer tous "
-"vos emails transactionnels avec SendinBlue SMTP. Vous vous assurerez que vos "
-"contacts reçoivent vos emails."
+msgid "Once you have created a SendinBlue account, activate this plugin to send all of your transactional emails via SendinBlue SMTP. SendinBlue optimizes email delivery to ensure emails reach the inbox."
+msgstr "Une fois votre compte SendinBlue créé, activez ce plugin pour envoyer tous vos emails transactionnels avec SendinBlue SMTP afin d'optimiser la délivrabilité de vos emails."
 
 #: ../page/page-home.php:141
 msgid "To activate your plugin, enter your API Access key."
@@ -532,7 +520,7 @@ msgstr "Clé d'accès"
 
 #: ../page/page-home.php:149
 msgid "Login"
-msgstr "Identifiant"
+msgstr "Se connecter"
 
 #: ../page/page-home.php:195
 msgid "My Account"
@@ -564,7 +552,7 @@ msgstr "contacts."
 
 #: ../page/page-home.php:217
 msgid "Access to the list of all my contacts"
-msgstr "Accéder à ma liste de tous mes contacts"
+msgstr "Accéder à la liste de tous mes contacts"
 
 #: ../page/page-home.php:225
 msgid "Email Campaigns"
@@ -713,13 +701,8 @@ msgid "About SendinBlue"
 msgstr "A propos de SendinBlue"
 
 #: ../page/page-home.php:409
-msgid ""
-"SendinBlue is an online software that allows you to send emails and SMS. "
-"Easily manage your Marketing campaigns, transactional emails and SMS."
-msgstr ""
-"SendinBlue est un logiciel en ligne qui permet d'envoyer SMS et emails. "
-"Gérer de manière simple et efficace vos campagnes Marketing, SMS et emails  "
-"transactionnels"
+msgid "SendinBlue is an online software that helps you build and grow relationships through marketing and transactional emails, marketing automation, and text messages."
+msgstr "SendinBlue est une plateforme tout-en-un qui permet de gérer votre marketing relationnel : gérez de manière simple et efficace vos campagnes marketing, SMS et emails transactionnels."
 
 #: ../page/page-home.php:412
 msgid "Who we are"
@@ -734,12 +717,12 @@ msgid "Features"
 msgstr "Fonctionnalités"
 
 #: ../page/page-home.php:425
-msgid "Need Help ?"
-msgstr "Besoin d'aide"
+msgid "Need Help?"
+msgstr "Besoin d'aide ?"
 
 #: ../page/page-home.php:427
-msgid "You have a question or need more information ?"
-msgstr "Vous avez une question, ou besoin de plus d'information ? "
+msgid "Do you have a question or need more information?"
+msgstr "Vous avez une question, ou avez besoin de plus d'information ?"
 
 #: ../page/page-home.php:429
 msgid "Tutorials"
@@ -967,8 +950,8 @@ msgid "Add Terms URL"
 msgstr "Ajouter l'URL de consultation des CGU"
 
 #: ../page/page-form.php:123
-msgid "Note: Forms created in SendinBlue plugin for Wordpress won't be displayed in Forms section in SendinBlue application"
-msgstr "Note : Les formulaires créés dans le plugin SendinBlue pour Wordpress ne seront pas visibles dans la section Formulaires de l'application SendinBlue"
+msgid "Note: Forms created in SendinBlue plugin for WordPress won't be displayed in Forms section in SendinBlue application"
+msgstr "Note : Les formulaires créés avec le plugin Sendinblue pour Wordpress ne seront pas présents sur la page Formulaires de votre compte Sendinblue"
 
 #: ../page/page-home.php:464
 msgid "Let everyone know you like this plugin through a review!"
@@ -1068,156 +1051,231 @@ msgstr "Charger le formulaire par défaut"
 msgid "Your e-mail address is only used to send you our newsletter and information about the activities of %s. You can always use the unsubscribe link included in the newsletter."
 msgstr "Votre adresse email est utilisée uniquement pour vous envoyer notre newsletter ainsi que les activités concernant %s. Vous pouvez toujours vous désinscrire en cliquant sur le lien de désinscription se trouvant dans la newsletter."
 
-#~ msgid "Settings"
-#~ msgstr "Paramètres"
+msgid "Settings"
+msgstr "Paramètres"
 
-#~ msgid ""
-#~ "Confirmation emails will be sent through your own email server, but you "
-#~ "have no guarantees on their deliverability. <br/> <a href=\"https://app-"
-#~ "smtp.sendinblue.com\" target=\"_blank\">Click here</a> to send your "
-#~ "emails through SendinBlue in order to improve your deliverability and get "
-#~ "statistics"
-#~ msgstr ""
-#~ "Les emails de confirmation seront envoyés par votre propre serveur email. "
-#~ "Vous n'avez donc aucune garantie sur la délivrabilité de vos emails. <br/"
-#~ "> Pour améliorer la délivrabilité et obtenir des statistiques, activez "
-#~ "l'envoi des emails via le serveur SMTP de SendinBlue en <a href=\"https://"
-#~ "app-smtp.sendinblue.com\" target=\"_blank\">cliquant ici</a>"
+msgid ""
+"Confirmation emails will be sent through your own email server, but you "
+"have no guarantees on their deliverability. <br/> <a href=\"https://app-"
+"smtp.sendinblue.com\" target=\"_blank\">Click here</a> to send your "
+"emails through SendinBlue in order to improve your deliverability and get "
+"statistics"
+msgstr ""
+"Les emails de confirmation seront envoyés par votre propre serveur email. "
+"Vous n'avez donc aucune garantie sur la délivrabilité de vos emails. <br/"
+"> Pour améliorer la délivrabilité et obtenir des statistiques, activez "
+"l'envoi des emails via le serveur SMTP de SendinBlue en <a href=\"https://"
+"app-smtp.sendinblue.com\" target=\"_blank\">cliquant ici</a>"
 
-#~ msgid "Sign up"
-#~ msgstr "S'inscrire"
+msgid "Sign up"
+msgstr "S'inscrire"
 
-#~ msgid "Wrap in Paragraph (&lt;p&gt;) tags ?"
-#~ msgstr "Entourer de balise <p> ?"
+msgid "Wrap in Paragraph (&lt;p&gt;) tags ?"
+msgstr "Entourer de balise <p> ?"
 
-#~ msgid "Display"
-#~ msgstr "Afficher"
+msgid "Display"
+msgstr "Afficher"
 
-#~ msgid "Input"
-#~ msgstr "Saisir"
+msgid "Input"
+msgstr "Saisir"
 
-#~ msgid "List"
-#~ msgstr "Liste"
+msgid "List"
+msgstr "Liste"
 
-#~ msgid ""
-#~ "Unfortunately, you wannot activate \"Transactional emails\"  because your "
-#~ "SendinBlue SMTP account is not valid. Please send an email to "
-#~ "contact@sendinblue.com in order to ask for SMTP account activation"
-#~ msgstr ""
-#~ "Malheureusement, vous ne pouvez pas activer \"Emails transactionnels\" "
-#~ "parce que votre compte SMTP SendinBlue n'a pas été validé. Merci "
-#~ "d'envoyer un email à contact@sendinblue.com afin de demander l'activation "
-#~ "de votre compte SMTP"
+msgid ""
+"Unfortunately, you wannot activate \"Transactional emails\"  because your "
+"SendinBlue SMTP account is not valid. Please send an email to "
+"contact@sendinblue.com in order to ask for SMTP account activation"
+msgstr ""
+"Malheureusement, vous ne pouvez pas activer \"Emails transactionnels\" "
+"parce que votre compte SMTP SendinBlue n'a pas été validé. Merci "
+"d'envoyer un email à contact@sendinblue.com afin de demander l'activation "
+"de votre compte SMTP"
 
-#~ msgid "SendinBlue merge fields"
-#~ msgstr "Champs synchronisé avec SendinBlue"
+msgid "SendinBlue merge fields"
+msgstr "Champs synchronisé avec SendinBlue"
 
-#~ msgid "Double Optin"
-#~ msgstr "Double Optin"
+msgid "Double Optin"
+msgstr "Double Optin"
 
-#~ msgid ""
-#~ "The template you selected does not include a link [DOUBLEOPTIN] to allow "
-#~ "subscribers to confirm their subscription. Please edit the template to "
-#~ "include a link with [DOUBLEOPTIN] as URL."
-#~ msgstr ""
-#~ "Le template choisi ne contient pas de lien [DOUBLEOPTIN] qui permet aux "
-#~ "inscrits de confirmer leur inscription. Vous devez modifier votre "
-#~ "template pour inclure le shortcode [DOUBLEOPTIN] à la place d'une URL "
-#~ "avant de pouvoir le choisir."
+msgid ""
+"The template you selected does not include a link [DOUBLEOPTIN] to allow "
+"subscribers to confirm their subscription. Please edit the template to "
+"include a link with [DOUBLEOPTIN] as URL."
+msgstr ""
+"Le template choisi ne contient pas de lien [DOUBLEOPTIN] qui permet aux "
+"inscrits de confirmer leur inscription. Vous devez modifier votre "
+"template pour inclure le shortcode [DOUBLEOPTIN] à la place d'une URL "
+"avant de pouvoir le choisir."
 
-#~ msgid "Close"
-#~ msgstr "Fermer"
+msgid "Close"
+msgstr "Fermer"
 
-#~ msgid "Confirmation email"
-#~ msgstr "Les emails de confirmation"
+msgid "Confirmation email"
+msgstr "Les emails de confirmation"
 
-#~ msgid ""
-#~ "Confirmation emails will be sent through your own email server, but you "
-#~ "have no guarantees on their deliverability. <a href=\"https://app-smtp."
-#~ "sendinblue.com\" target=\"_blank\">Click here</a> to send your emails "
-#~ "through SendinBlue in order to improve your deliverability and get "
-#~ "statistics"
-#~ msgstr ""
-#~ "Les emails de confirmation seront envoyés par votre propre serveur email. "
-#~ "Vous n'avez donc aucune garantie sur la délivrabilité de vos emails. Pour "
-#~ "améliorer la délivrabilité et obtenir des statistiques, activez l'envoi "
-#~ "des emails via le serveur SMTP de SendinBlue en <a href=\"https://app-"
-#~ "smtp.sendinblue.com\" target=\"_blank\">cliquant ici</a>"
+msgid ""
+"Confirmation emails will be sent through your own email server, but you "
+"have no guarantees on their deliverability. <a href=\"https://app-smtp."
+"sendinblue.com\" target=\"_blank\">Click here</a> to send your emails "
+"through SendinBlue in order to improve your deliverability and get "
+"statistics"
+msgstr ""
+"Les emails de confirmation seront envoyés par votre propre serveur email. "
+"Vous n'avez donc aucune garantie sur la délivrabilité de vos emails. Pour "
+"améliorer la délivrabilité et obtenir des statistiques, activez l'envoi "
+"des emails via le serveur SMTP de SendinBlue en <a href=\"https://app-"
+"smtp.sendinblue.com\" target=\"_blank\">cliquant ici</a>"
 
-#~ msgid ""
-#~ "You can choose to add a step in the confirmation process, by requiring a "
-#~ "new suscriber to click on a link sent to the registered email adress. By "
-#~ "doing so, he will be added to your contact"
-#~ msgstr ""
-#~ "Vous pouvez choisir d'ajouter une étape dans le processus d'inscription, "
-#~ "en demandant à vos nouveaux inscrits de cliquer sur un lien envoyé à "
-#~ "l'adresse email déclarée. Ils seront ensuite ajoutés à votre liste de "
-#~ "contact. "
+msgid ""
+"You can choose to add a step in the confirmation process, by requiring a "
+"new suscriber to click on a link sent to the registered email adress. By "
+"doing so, he will be added to your contact"
+msgstr ""
+"Vous pouvez choisir d'ajouter une étape dans le processus d'inscription, "
+"en demandant à vos nouveaux inscrits de cliquer sur un lien envoyé à "
+"l'adresse email déclarée. Ils seront ensuite ajoutés à votre liste de "
+"contact. "
 
-#~ msgid ""
-#~ "Confirmation emails will be sent through your own email servers. This "
-#~ "means no guarantees on emails deliverability. If you want to improve your "
-#~ "deliverability and get statistics,"
-#~ msgstr ""
-#~ "Les emails de confirmation seront envoyés par votre propre serveur email. "
-#~ "Vous n'avez donc aucune garantie sur la délivrabilité de vos emails. Pour "
-#~ "améliorer la délivrabilité et obtenir des statistiques, activez l'envoi "
-#~ "des emails via le serveur SMTP de SendinBlue en"
+msgid ""
+"Confirmation emails will be sent through your own email servers. This "
+"means no guarantees on emails deliverability. If you want to improve your "
+"deliverability and get statistics,"
+msgstr ""
+"Les emails de confirmation seront envoyés par votre propre serveur email. "
+"Vous n'avez donc aucune garantie sur la délivrabilité de vos emails. Pour "
+"améliorer la délivrabilité et obtenir des statistiques, activez l'envoi "
+"des emails via le serveur SMTP de SendinBlue en"
 
-#~ msgid "click here"
-#~ msgstr "cliquant ici"
+msgid "click here"
+msgstr "cliquant ici"
 
-#~ msgid "Set up my senders"
-#~ msgstr "Paramétrer mes expéditeurs"
+msgid "Set up my senders"
+msgstr "Paramétrer mes expéditeurs"
 
-#~ msgid "To activate your plugin, enter your API Access key and Secret key."
-#~ msgstr ""
-#~ "Pour activer ce plugin, entrez votre clé API d'accès et votre clé API "
-#~ "secrète"
+msgid "To activate your plugin, enter your API Access key and Secret key."
+msgstr ""
+"Pour activer ce plugin, entrez votre clé API d'accès et votre clé API "
+"secrète"
 
-#~ msgid "Secret Key"
-#~ msgstr "Clé secrète"
+msgid "Secret Key"
+msgstr "Clé secrète"
 
-#~ msgid "Choose Template"
-#~ msgstr "Choisir un Template"
+msgid "Choose Template"
+msgstr "Choisir un Template"
 
-#~ msgid "Choose Sender"
-#~ msgstr "Choisir l'expéditeur"
+msgid "Choose Sender"
+msgstr "Choisir l'expéditeur"
 
-#~ msgid "And more"
-#~ msgstr "Et bien plus"
+msgid "And more"
+msgstr "Et bien plus"
 
-#~ msgid "Yes, subscribe me to this list."
-#~ msgstr "Oui, je souhaite m'inscrire à cette liste"
+msgid "Yes, subscribe me to this list."
+msgstr "Oui, je souhaite m'inscrire à cette liste"
 
-#~ msgid ""
-#~ "If you received this email by mistake, simply delete it. You will not be "
-#~ "subscribed to this list if you don't click the confirmation link above."
-#~ msgstr ""
-#~ "SI vous avez reçu cet email par erreur, merci de le supprimer. Vous ne "
-#~ "serez pas inscrit si vous ne cliquez pas sur le lien de confirmation ci-"
-#~ "dessus"
+msgid ""
+"If you received this email by mistake, simply delete it. You will not be "
+"subscribed to this list if you don't click the confirmation link above."
+msgstr ""
+"SI vous avez reçu cet email par erreur, merci de le supprimer. Vous ne "
+"serez pas inscrit si vous ne cliquez pas sur le lien de confirmation ci-"
+"dessus"
 
-#~ msgid "Campaign"
-#~ msgstr "Campagne"
+msgid "Campaign"
+msgstr "Campagne"
 
-#~ msgid "Welcome"
-#~ msgstr "Bienvenue "
+msgid "Welcome"
+msgstr "Bienvenue "
 
-#~ msgid "Get it from"
-#~ msgstr "Obtenez les depuis"
+msgid "Get it from"
+msgstr "Obtenez les depuis"
 
-#~ msgid "your account"
-#~ msgstr "votre compte"
+msgid "your account"
+msgstr "votre compte"
 
-#~ msgid "SendinBlue API Access Key"
-#~ msgstr "Clé API d'accès"
+msgid "SendinBlue API Access Key"
+msgstr "Clé API d'accès"
 
-#~ msgid "Please input Access key to activate."
-#~ msgstr "Insérez votre clé API d'accès pour l'activation"
+msgid "Please input Access key to activate."
+msgstr "Insérez votre clé API d'accès pour l'activation"
 
-#~ msgid "SendinBlue API Secret Key"
-#~ msgstr "Clé API secrète"
+msgid "SendinBlue API Secret Key"
+msgstr "Clé API secrète"
 
-#~ msgid "My account "
-#~ msgstr "Mon compte"
+msgid "My account "
+msgstr "Mon compte"
+
+msgid "Users Synchronisation"
+msgstr "Synchronisation des utilisateurs"
+
+msgid "You have"
+msgstr "Vous avez"
+
+msgid "existing users."
+msgstr "utilisateurs existants."
+
+msgid "Do you want to add them to SendinBlue?"
+msgstr "Souhaitez-vous les ajouter à SendinBlue ?"
+
+msgid "Sync my users"
+msgstr "Synchroniser"
+
+msgid "Sync my users"
+msgstr "Synchroniser"
+
+msgid "Roles to sync"
+msgstr "Rôles à synchroniser"
+
+msgid "Administrator"
+msgstr "Administrateur"
+
+msgid "Author"
+msgstr "Auteur"
+
+msgid "Subscriber"
+msgstr "Abonné"
+
+msgid "Shop manager"
+msgstr "Gestionnaire boutique"
+
+msgid "Editor"
+msgstr "Editeur"
+
+msgid "Contributor"
+msgstr "Contributeur"
+
+msgid "Customer"
+msgstr "Client"
+
+msgid "Sync Lists"
+msgstr "Listes de synchronisation"
+
+msgid "Choose the Sendinblue list in which you want to add your existing customers:"
+msgstr "Choisissez à quelle(s) liste(s) vos contacts existants seront ajoutés :"
+
+msgid "Match Attributes"
+msgstr "Mapping des champs"
+
+msgid "WordPress Users Attributes"
+msgstr "Attributs des utilisateurs WordPress"
+
+msgid "SendinBlue Contact Attributes"
+msgstr "Attributs de contact SendinBlue"
+
+msgid "You have %s existing users. Do you want to add them to SendinBlue?"
+msgstr "Vous avez %s utilisateurs existants. Souhaitez-vous les ajouter à SendinBlue ?"
+
+msgid "Set up the message that will appear when the required field is empty"
+msgstr "Configurez le message qui apparaîtra lorsque le champ requis est vide"
+
+msgid "Apply"
+msgstr "Appliquer"
+
+msgid "Required Field"
+msgstr "Champ obligatoire"
+
+msgid "Please fill out this field"
+msgstr "Remplissez ce champ s’il vous plaît"
+
+msgid "Default Form"
+msgstr "Formulaire par défaut"

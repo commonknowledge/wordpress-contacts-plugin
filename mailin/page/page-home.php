@@ -443,8 +443,8 @@ if ( ! class_exists( 'SIB_Page_Home' ) ) {
 									echo ' disabled';
 								}
 									?>
-									 >&nbsp;Yes</label>
-								<label class="col-md-6"><input type="radio" name="activate_email" id="activate_email_radio_no" value="no" <?php checked( $home_settings['activate_email'], 'no' ); ?>>&nbsp;No</label>
+									 >&nbsp;<?php esc_attr_e( 'Yes', 'sib_lang' ); ?></label>
+								<label class="col-md-6"><input type="radio" name="activate_email" id="activate_email_radio_no" value="no" <?php checked( $home_settings['activate_email'], 'no' ); ?>>&nbsp;<?php esc_attr_e( 'No', 'sib_lang' ); ?></label>
 							</div>
 							<div class="col-md-5">
 								<small style="font-style: italic;"><?php esc_attr_e( 'Choose "Yes" if you want to use SendinBlue SMTP to send transactional emails', 'sib_lang' ); ?></small>
@@ -503,15 +503,15 @@ if ( ! class_exists( 'SIB_Page_Home' ) ) {
 								<?php
 								checked( $home_settings['activate_ma'], 'yes' );
 									?>
-									 >&nbsp;Yes</label>
-								<label class="col-md-6"><input type="radio" name="activate_ma" id="activate_ma_radio_no" value="no" <?php checked( $home_settings['activate_ma'], 'no' ); ?>>&nbsp;No</label>
+									 >&nbsp;<?php esc_attr_e( 'Yes', 'sib_lang' ); ?></label>
+								<label class="col-md-6"><input type="radio" name="activate_ma" id="activate_ma_radio_no" value="no" <?php checked( $home_settings['activate_ma'], 'no' ); ?>>&nbsp;<?php esc_attr_e( 'No', 'sib_lang' ); ?></label>
 							</div>
 							<div class="col-md-5">
 								<small style="font-style: italic;"><?php esc_attr_e( 'Choose "Yes" if you want to use SendinBlue Automation to track your website activity', 'sib_lang' ); ?></small>
 							</div>
 						</div>
 						<div class="row" style="">
-							<p class="col-md-4 text-left" style="font-size: 13px; font-style: italic;"><?php printf( esc_attr__( '%1$s Explore our resource %2$s to learn more about SendinBlue Automation', 'sib_lang' ), '<a href="https://help.sendinblue.com/hc/en-us/articles/208775609" target="_blank">', '</a>' ); ?></p>
+							<p class="col-md-4 text-left" style="font-size: 13px; font-style: italic;"><?php printf( esc_attr__( '%s Explore our resource %s to learn more about SendinBlue Automation', 'sib_lang' ), '<a href="https://help.sendinblue.com/hc/en-us/articles/208775609" target="_blank">', '</a>' ); ?></p>
 							<div class="col-md-3">
 								<button type="button" id="validate_ma_btn" class="col-md-12 btn btn-primary"><span class="sib-spin"><i class="fa fa-circle-o-notch fa-spin fa-lg"></i>&nbsp;&nbsp;</span><?php esc_attr_e( 'Activate', 'sib_lang' ); ?></button>
 							</div>
@@ -641,7 +641,7 @@ if ( ! class_exists( 'SIB_Page_Home' ) ) {
 					<div class="modal-content">
 						<div class="modal-header">
 							<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true" style="font-size: 22px;">&times;</span><span class="sr-only">Close</span></button>
-							<h4 class="modal-title"><?php esc_attr_e( 'Customers Synchronisation','sib_lang' ); ?></h4>
+							<h4 class="modal-title"><?php esc_attr_e( 'Users Synchronisation','sib_lang' ); ?></h4>
 						</div>
 						<div class="modal-body sync-modal-body" style="padding: 10px;">
 							<div id="sync-failure" class="sib_alert alert alert-danger" style="margin-bottom: 0px;display: none;"></div>
@@ -651,7 +651,7 @@ if ( ! class_exists( 'SIB_Page_Home' ) ) {
 								<b><p><?php esc_attr_e( 'Roles to sync', 'sib_lang' ); ?></p></b>
 								<?php foreach ( wp_roles()->roles as $role_name => $role_info ) : ?>
 								<div class="col-md-6">
-									<span class="" style="display: block;float:left;padding-left: 16px;"><input type="checkbox" id="<?php echo esc_attr( $role_name ); ?>" value="<?php echo esc_attr( $role_name ); ?>" name="sync_role" checked><label for="<?php echo esc_attr( $role_name ); ?>" style="margin: 4px 24px 0 7px;font-weight: normal;"><?php echo esc_attr( $role_info['name'] ); ?></label></span>
+									<span class="" style="display: block;float:left;padding-left: 16px;"><input type="checkbox" id="<?php echo esc_attr( $role_name ); ?>" value="<?php echo esc_attr( $role_name ); ?>" name="sync_role" checked><label for="<?php echo esc_attr( $role_name ); ?>" style="margin: 4px 24px 0 7px;font-weight: normal;"><?php esc_attr_e( ucfirst($role_name), 'sib_lang' ); ?></label></span>
 								</div>
 								<?php endforeach; ?>
 							</div>
