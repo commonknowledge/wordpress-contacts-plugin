@@ -179,7 +179,7 @@ if ( ! class_exists( 'SIB_Forms' ) ) {
 						continue;
 					}
 					$listIDs = maybe_unserialize( $form['listID'] );
-					$lisIDs = !empty($listIDs) ? $listIDs : [];
+					$listIDs = !empty($listIDs) ? $listIDs : array();
 					// get names form id array.
 					$lists = SIB_API_Manager::get_lists(); // pair of id and name.
 
