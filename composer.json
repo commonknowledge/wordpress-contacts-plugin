@@ -1,0 +1,17 @@
+{
+  "name": "commonknowledge/wordpress-contacts-plugin",
+  "description": "Forked version of Sendinblue Subscribe Form And WP SMTP",
+  "version": "1.0",
+  "keywords": ["wordpress", "plugin"],
+  "homepage": "https://github.com/commonknowledge/wordpress-contacts-plugin",
+  "authors": [
+    {
+      "name": "Sendinblue",
+      "homepage": "https://www.brevo.com/"
+    }
+  ],
+  "type": "wordpress-plugin",
+  "require": {
+    "php": ">=7.0"
+  }
+}
